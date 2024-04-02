@@ -213,7 +213,7 @@ class LoadData(Dataset):  # 这个就是把读入的数据处理成模型需要�
         return normalized_data
 
     @staticmethod
-    def pre(flow_p8):  # 线性插值法填充缺失值
+    def pre(flow_p8):
 
         for i in range(flow_p8.shape[0]):
             t155 = flow_p8[i, :, 0]
